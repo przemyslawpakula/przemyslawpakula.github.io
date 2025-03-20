@@ -4,135 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przemysław Pakuła - CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            width: 80%;
-            max-width: 800px;
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        .photo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .photo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #ffffff;
-        }
-        h1, h2 {
-            color: #ffcc00;
-            text-align: center;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            border-bottom: 2px solid #ffcc00;
-            padding-bottom: 5px;
-        }
-        .section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .section ul li {
-            background-color: #2a2a2a;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .section ul li h3 {
-            margin: 0;
-            color: #ffcc00;
-        }
-        .section ul li p {
-            margin: 5px 0 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark-theme">
     <div class="container">
-        <div class="photo">
-            <img src="profile.jpg" alt="Profile Photo">
-        </div>
-        <h1>Przemysław Pakuła</h1>
-        <div class="section">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <h3>Master of Computer Science</h3>
-                    <p>University of Warsaw, 2020 - 2022</p>
-                </li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <h3>Software Developer at ABC Corp</h3>
-                    <p>Developed web applications using JavaScript frameworks.</p>
-                    <p>2022 - Present</p>
-                </li>
-                <li>
-                    <h3>Junior Developer at XYZ Ltd</h3>
-                    <p>Assisted in the development of e-commerce platforms.</p>
-                    <p>2020 - 2022</p>
-                </li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Certificates</h2>
-            <ul>
-                <li>
-                    <h3>Certified JavaScript Developer</h3>
-                    <p>Issued by Tech Institute, 2021</p>
-                </li>
-                <li>
-                    <h3>Agile Project Management</h3>
-                    <p>Issued by Agile Academy, 2020</p>
-                </li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Completed Courses</h2>
-            <ul>
-                <li>
-                    <h3>Full-Stack Web Development</h3>
-                    <p>Completed on Coursera, 2021</p>
-                </li>
-                <li>
-                    <h3>Data Structures and Algorithms</h3>
-                    <p>Completed on edX, 2020</p>
-                </li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>
-                    <h3>Photography</h3>
-                    <p>Enjoy capturing landscapes and urban scenes.</p>
-                </li>
-                <li>
-                    <h3>Cycling</h3>
-                    <p>Regularly participate in local cycling events.</p>
-                </li>
-            </ul>
-        </div>
+        <header>
+            <div class="photo-container">
+                <!-- Replace 'photo.jpg' with the path to your actual photo -->
+                <img src="photo.jpg" alt="Przemysław Pakuła" class="profile-photo">
+            </div>
+            <div class="intro">
+                <h1 id="name"></h1>
+                <p class="bio">A dedicated professional with a passion for technology and continuous learning.</p>
+            </div>
+        </header>
+        <nav>
+            <button id="theme-toggle">Switch to Light Theme</button>
+        </nav>
+        <main>
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>Master of Computer Science</strong><br>
+                        University of Technology, 2020
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Software Developer</strong><br>
+                        Tech Solutions Inc., 2021 - Present
+                    </li>
+                    <li>
+                        <strong>Junior Developer</strong><br>
+                        Web Innovations, 2019 - 2021
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Certificates</h2>
+                <ul>
+                    <li>Certified Java Programmer</li>
+                    <li>Full-Stack Web Development Certification</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Completed Courses</h2>
+                <ul>
+                    <li>Advanced JavaScript</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Photography</li>
+                    <li>Cycling</li>
+                </ul>
+            </section>
+        </main>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
