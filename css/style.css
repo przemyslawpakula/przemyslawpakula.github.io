@@ -129,3 +129,34 @@ p {
     height: 4px;
   }
 }
+
+/* Red separator */
+.separator {
+  width: 50%;
+  height: 2px;
+  background-color: #E83951;
+  border: none;
+  margin: 20px auto;
+}
+
+/* Bio text */
+.bio {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Avatar styling */
+.avatar {
+  width: 30vw;  /* Width is 30% of the viewport width */
+  height: auto;  /* Height adjusts automatically based on width */
+  border-radius: 50%;  /* Make it circular */
+  margin-bottom: 20px;  /* Space below the avatar */
+  border: 4px solid #E83951;  /* Optional border for style */
+  object-fit: cover;  /* Ensure the image covers the space without stretching */
+  max-width: 150px;  /* Optional: set a max width to prevent it from getting too large */
+  max-height: 150px;  /* Optional: set a max height to maintain consistency */
+}

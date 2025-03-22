@@ -9,20 +9,23 @@ document.addEventListener('DOMContentLoaded', function () {
     dotColor: '#5cbdaa',
     lineColor: '#5cbdaa'
   });
+
   var intro = document.getElementById('intro');
-  intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+  intro.style.marginTop = -intro.offsetHeight / 2 + 'px';
+
+  // Initialize Typed.js for Name
+  var typedName = new Typed('#typed-name', {
+    strings: ["Przemysław Pakuła"],
+    typeSpeed: 100,
+    showCursor: false,
+    onComplete: function() {  // This will run after the name finishes typing
+      // Initialize Typed.js for Position (Title) after name finishes typing
+      new Typed('#typed-title', {
+        strings: ["ICT/Cloud Engineer"],
+        typeSpeed: 100,
+        startDelay: 500, // Optional: You can adjust the delay before starting typing position
+        showCursor: false
+      });
+    }
+  });
 }, false);
-
-
-/*
-// jQuery plugin example:
-$(document).ready(function() {
-  $('#particles').particleground({
-    dotColor: '#5cbdaa',
-    lineColor: '#5cbdaa'
-  });
-  $('.intro').css({
-    'margin-top': -($('.intro').height() / 2)
-  });
-});
-*/
