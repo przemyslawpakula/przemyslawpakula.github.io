@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     onComplete: function() {  // This will run after the name finishes typing
       // Initialize Typed.js for Position (Title) after name finishes typing
       new Typed('#typed-title', {
-        strings: ["ICT/Cloud Engineer"],
+        strings: ["ICT Engineer"],
         typeSpeed: 100,
         startDelay: 500, // Optional: You can adjust the delay before starting typing position
         showCursor: false
