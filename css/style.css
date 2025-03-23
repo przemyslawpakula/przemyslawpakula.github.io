@@ -174,3 +174,7 @@ p {
 img.social-icon {
   object-fit: contain; /* Upewnia się, że obraz nie rozciąga się */
 }
+
+a {
+  text-decoration: none;
+}
