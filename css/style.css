@@ -160,3 +160,17 @@ p {
   max-width: 150px;  /* Optional: set a max width to prevent it from getting too large */
   max-height: 150px;  /* Optional: set a max height to maintain consistency */
 }
+
+.social-icon {
+  width: 2em;
+  height: 2em;
+  max-width: 40px;
+  max-height: 40px;
+  vertical-align: middle; /* kluczowe */
+  display: inline-block;   /* lepsze niż inline */
+  margin: 0 5px;           /* estetyczne odstępy */
+}
+
+img.social-icon {
+  object-fit: contain; /* Upewnia się, że obraz nie rozciąga się */
+}
